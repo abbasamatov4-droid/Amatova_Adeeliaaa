@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фикх илими боюнча сабактар — «Мухтасар аль-Кудури»</title>
+  <meta name="description" content="Фикх илими боюнча онлайн сабактар башталат! «Мухтасар аль-Кудури» китебинен, Египеттеги Азхар университетинде окуган, 4 жылдык тажрыйбасы бар устаза менен. Telegram аркылуу, жумасына 2 жолу." />
+  <meta name="theme-color" content="#0d0b09" />
+ 
+  <!-- Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Фикх илими боюнча сабактар башталат!" />
+  <meta property="og:description" content="«Мухтасар аль-Кудури» китебинен онлайн сабактар. Азхар университетинин устазасы менен." />
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__star">✦</div>
+    <p class="preloader__text">بسم الله الرحمن الرحيم</p>
+  </div>
+ 
+  <div class="progress" id="progress"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+ 
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__icon">✦</span>
+        <span>Фикх <b>сабактары</b></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#about">Курс тууралуу</a>
+        <a href="#program">Темалар</a>
+        <a href="#how">Кантип катышам</a>
+        <a href="#faq">Суроолор</a>
+        <a href="#contact" class="btn btn--small">Жазылуу</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Менюну ачуу" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+ 
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge reveal"><i></i> Жаңы агым башталат</span>
+          <h1 class="reveal">
+            <span class="h1-light">Фикх илими боюнча</span>
+            <span class="h1-gold">сабактар башталат!</span>
+          </h1>
+          <p class="hero__lead reveal">
+            «Мухтасар аль-Кудури» китебинен — Египеттеги Азхар университетинде окуган,
+            4 жылдык тажрыйбасы бар устаза менен.
+          </p>
+ 
+          <ul class="chips reveal">
+            <li><span>🎓</span> Азхар университети</li>
+            <li><span>💻</span> Онлайн — Telegram</li>
+            <li><span>📅</span> Жумасына 2 жолу</li>
+          </ul>
+ 
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn">Сабакка жазылуу <span class="arrow">→</span></a>
+            <a href="#about" class="btn btn--ghost">Көбүрөөк билүү</a>
+          </div>
+        </div>
+ 
+        <div class="hero__visual reveal">
+          <div class="glow"></div>
+          <div class="book-scene" id="bookScene">
+            <div class="book">
+              <div class="book__pages"></div>
+              <div class="book__cover">
+                <div class="book__frame">
+                  <div class="book__oval">
+                    <span class="book__ar">مختصر<br />القدوري</span>
+                    <small>Мухтасар аль-Кудури</small>
+                  </div>
+                  <div class="book__ornament">✦ ✦ ✦</div>
+                </div>
+              </div>
+              <div class="book__spine"></div>
+            </div>
+            <div class="floating f1">✦</div>
+            <div class="floating f2">☾</div>
+            <div class="floating f3">✦</div>
+          </div>
+        </div>
+      </div>
+      <a href="#stats" class="scroll-hint" aria-label="Ылдый жылдыруу"><span></span></a>
+    </section>
+ 
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <div class="stat__num"><span data-count="4">0</span>+</div>
+          <p>жылдык окутуу тажрыйбасы</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num"><span data-count="2">0</span></div>
+          <p>жолу — жумасына сабак</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__num"><span data-count="100">0</span>%</div>
+          <p>онлайн, Telegram аркылуу</p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Курс тууралуу</span>
+          <h2>Динибизди <span class="gold">теренирээк</span> түшүнүүгө бирге кадам таштайлы</h2>
+          <p>Фикх илимин үйрөнүп, ибадаттарыбызды туура аткарууга жана динибизди теренирээк түшүнүүгө жол ачабыз.</p>
+        </div>
+ 
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">📖</div>
+            <h3>«Мухтасар аль-Кудури»</h3>
+            <p>Ханафий мазхабындагы фикхтин классикалык китеби боюнча кадам сайын, түшүнүктүү сабактар.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🎓</div>
+            <h3>Азхардын устазасы</h3>
+            <p>Египеттеги Азхар университетинде окуган, 4 жылдык тажрыйбасы бар устаза менен.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💬</div>
+            <h3>Онлайн — Telegram</h3>
+            <p>Үйдөн чыкпай эле, каалаган жерден Telegram аркылуу катышасыз.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🗓️</div>
+            <h3>Жумасына 2 жолу</h3>
+            <p>Ыңгайлуу ритм: билимди унутпай, акырындап жана туруктуу өздөштүрөсүз.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- PROGRAM -->
+    <section class="section section--alt" id="program">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Темалар</span>
+          <h2>Сабактарда <span class="gold">эмнени</span> үйрөнөбүз</h2>
+          <p>Китептин негизги бөлүмдөрү боюнча ибадаттардын тууралыгын жана шарттарын талдайбыз.</p>
+        </div>
+ 
+        <div class="topics">
+          <div class="topic reveal"><span class="topic__n">01</span><div><h3>Тахарат</h3><p>Тазалык жана даарат маселелери</p></div></div>
+          <div class="topic reveal"><span class="topic__n">02</span><div><h3>Намаз</h3><p>Намаздын шарттары жана тартиби</p></div></div>
+          <div class="topic reveal"><span class="topic__n">03</span><div><h3>Зекет</h3><p>Зекеттин эрежелери жана маңызы</p></div></div>
+          <div class="topic reveal"><span class="topic__n">04</span><div><h3>Орозо</h3><p>Орозонун эрежелери жана маселелери</p></div></div>
+          <div class="topic reveal"><span class="topic__n">05</span><div><h3>Хаж</h3><p>Хаж ибадатынын негиздери</p></div></div>
+          <div class="topic reveal"><span class="topic__n">06</span><div><h3>Жана башкалар</h3><p>Китептин кийинки бөлүмдөрү</p></div></div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- HOW -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Кантип катышам</span>
+          <h2>Баштоо — <span class="gold">3 жөнөкөй кадам</span></h2>
+        </div>
+ 
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__num">1</div>
+            <h3>Байланышыңыз</h3>
+            <p>Төмөндөгү Telegram баскычын басып жазыңыз.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">2</div>
+            <h3>Топко кошулуңуз</h3>
+            <p>Сизди Telegram аркылуу сабактар өтүүчү топко кошобуз.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">3</div>
+            <h3>Окууну баштаңыз</h3>
+            <p>Жумасына 2 жолу онлайн сабактарга катышып, билим алыңыз.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">Суроолор</span>
+          <h2>Көп берилүүчү <span class="gold">суроолор</span></h2>
+        </div>
+ 
+        <div class="faq">
+          <details class="faq__item reveal" open>
+            <summary>Сабактар кайсы китеп боюнча өтөт?</summary>
+            <p>Сабактар «Мухтасар аль-Кудури» китеби боюнча фикх илиминен өтөт.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Сабактарды ким өтөт?</summary>
+            <p>Египеттеги Азхар университетинде окуган, 4 жылдык тажрыйбасы бар устаза.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Сабактар кайда жана кандай форматта өтөт?</summary>
+            <p>Сабактар онлайн форматта, Telegram аркылуу өтөт.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Жумасына канча жолу сабак болот?</summary>
+            <p>Жумасына 2 жолу.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Кантип жазылсам болот?</summary>
+            <p>Төмөндөгү «Байланыш» бөлүмүндөгү Telegram баскычын басып жазыңыз.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__text">
+            <span class="eyebrow">Байланыш</span>
+            <h2>Фикх илимин үйрөнүүнү <span class="gold">бүгүн баштаңыз</span></h2>
+            <p>Ибадаттарыбызды туура аткарууга жана динибизди теренирээк түшүнүүгө бирге кадам таштайлы!</p>
+ 
+            <a href="https://t.me/Adeeliaaa" id="tgBtn" class="btn btn--tg" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 18.6 19.6c-.2 1-.9 1.3-1.7.8l-4.8-3.6-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.9 8.9-8c.4-.3-.1-.5-.6-.2L6.4 13.3l-4.7-1.5c-1-.3-1-1 .2-1.5L20.3 3c.9-.3 1.6.2 1.6 1.3z"/></svg>
+              Telegram аркылуу жазуу
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="logo"><span class="logo__icon">✦</span><span>Фикх <b>сабактары</b></span></div>
+      <p>«Мухтасар аль-Кудури» · Онлайн · Жумасына 2 жолу</p>
+      <p class="footer__copy">© <span id="year"></span> Бардык укуктар корголгон</p>
+    </div>
+  </footer>
+ 
+  <button class="to-top" id="toTop" aria-label="Жогору">↑</button>
+  <div class="toast" id="toast" role="status"></div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
